@@ -541,7 +541,7 @@ a {
   font-size: 0.75rem;
   margin-bottom: 1rem;
   line-height: 1.6;
-  font-style: italic
+  font-style: italic;
   overflow: hidden;               
   display: -webkit-box;           
   -webkit-line-clamp: 4;          
