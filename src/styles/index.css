@@ -506,6 +506,7 @@ a {
   transition: all 0.3s ease;
   position: relative;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .client-card::before {
@@ -540,7 +541,14 @@ a {
   font-size: 0.75rem;
   margin-bottom: 1rem;
   line-height: 1.6;
-  font-style: italic;
+  font-style: italic
+  overflow: hidden;               
+  display: -webkit-box;           
+  -webkit-line-clamp: 4;          
+  -webkit-box-orient: vertical;    
+  text-overflow: ellipsis;         
+  word-wrap: break-word;         
+  max-height: 4.8em;
 }
 
 .client-card h4 {
@@ -549,12 +557,18 @@ a {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
+  white-space: nowrap;             
+  overflow: hidden;                
+  text-overflow: ellipsis; 
 }
 
 .client-card span {
   color: var(--text-light);
   font-size: 0.7rem;
   display: block;
+  white-space: nowrap;            
+  overflow: hidden;                
+  text-overflow: ellipsis;  
 }
 
 /* Star rating decoration */
