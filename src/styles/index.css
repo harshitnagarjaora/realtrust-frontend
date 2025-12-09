@@ -542,12 +542,12 @@ a {
   margin-bottom: 1rem;
   line-height: 1.6;
   font-style: italic;
-  overflow: hidden;               
-  display: -webkit-box;           
-  -webkit-line-clamp: 4;          
-  -webkit-box-orient: vertical;    
-  text-overflow: ellipsis;         
-  word-wrap: break-word;         
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
   max-height: 4.8em;
 }
 
@@ -557,18 +557,18 @@ a {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 0.2rem;
-  white-space: nowrap;             
-  overflow: hidden;                
-  text-overflow: ellipsis; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .client-card span {
   color: var(--text-light);
   font-size: 0.7rem;
   display: block;
-  white-space: nowrap;            
-  overflow: hidden;                
-  text-overflow: ellipsis;  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Star rating decoration */
@@ -987,6 +987,8 @@ a {
   
   .realtor-section {
     grid-template-columns: 1fr;
+    padding: 60px 5%;
+    gap: 2rem;
   }
   
   .features-grid {
@@ -1003,27 +1005,287 @@ a {
 }
 
 @media (max-width: 768px) {
+  /* Navbar Mobile */
   .navbar {
-    flex-direction: column;
-    gap: 1rem;
+    padding: 0.75rem 4%;
   }
   
   .nav-links {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  /* Hero Mobile */
+  .hero {
+    min-height: auto;
+    padding: 100px 4% 40px;
+    gap: 1.5rem;
+  }
+  
+  .hero-overlay-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-form {
+    padding: 1.5rem;
+  }
+  
+  .hero-form h3 {
+    font-size: 1.3rem;
+  }
+  
+  .hero-form input {
+    padding: 0.85rem 1rem;
+  }
+  
+  /* Section Titles Mobile */
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  
+  /* Realtor Section Mobile */
+  .realtor-section {
+    padding: 40px 4%;
+    text-align: center;
+  }
+  
+  .realtor-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .realtor-images img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /* Features Grid Mobile */
+  .why-choose {
+    padding: 40px 4%;
+  }
+  
+  .features-grid {
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  /* About Section Mobile */
+  .about-section {
+    padding: 40px 4%;
+  }
+  
+  .about-images img {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+  }
+  
+  /* Projects Section Mobile */
+  .projects-section {
+    padding: 40px 4%;
+  }
+  
+  .scroll-container {
+    padding: 0 30px;
+  }
+  
+  .scroll-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1.2rem;
+  }
+  
+  .scroll-left {
+    left: 0;
+  }
+  
+  .scroll-right {
+    right: 0;
+  }
+  
+  .project-card {
+    min-width: 180px;
+    max-width: 180px;
+  }
+  
+  .project-image {
+    height: 130px;
+  }
+  
+  .project-info {
+    padding: 0.75rem;
+  }
+  
+  .project-info h3 {
+    font-size: 0.85rem;
+  }
+  
+  .project-info p {
+    font-size: 0.75rem;
+  }
+  
+  /* Clients Section Mobile */
+  .clients-section {
+    padding: 40px 4%;
+  }
+  
+  .client-card {
+    min-width: 170px;
+    max-width: 170px;
+    padding: 1.2rem 0.8rem;
+  }
+  
+  .client-image {
+    width: 55px;
+    height: 55px;
+  }
+  
+  .client-card p {
+    font-size: 0.7rem;
+    -webkit-line-clamp: 3;
+    max-height: 3.6em;
+  }
+  
+  .client-card h4 {
+    font-size: 0.8rem;
+  }
+  
+  /* CTA Section Mobile */
+  .cta-section {
+    padding: 50px 4%;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.4rem;
+  }
+  
+  /* Footer Mobile */
+  .footer {
+    padding: 1.5rem 4%;
   }
   
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
   
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .newsletter-form input {
+    min-width: 100%;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  /* Admin Panel Mobile */
   .admin-sidebar {
     display: none;
   }
   
   .admin-main {
     margin-left: 0;
+    padding: 1rem;
+  }
+  
+  .admin-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .admin-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens */
+  .hero-overlay-text h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-form {
+    padding: 1.2rem;
+  }
+  
+  .hero-form h3 {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.3rem;
+  }
+  
+  .realtor-text h2 {
+    font-size: 1.3rem;
+  }
+  
+  .realtor-images img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .project-card {
+    min-width: 160px;
+    max-width: 160px;
+  }
+  
+  .client-card {
+    min-width: 150px;
+    max-width: 150px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-images {
+    gap: 1rem;
+  }
+  
+  .about-images img {
+    height: 150px;
   }
 }
